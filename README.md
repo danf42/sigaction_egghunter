@@ -1,6 +1,8 @@
 # sigaction(2) Egghunter
 32-bit implemention of the sigaction(2) egghunter explained the the paper [Safely Searching Process Virtual Address Space](http://www.hick.org/code/skape/papers/egghunt-shellcode.pdf) by skape
 
+ExploitDB [Linux/x86 - Egghunter(0x50905090) + sigaction + execve(/bin/sh) Shellcode (35 bytes)](https://www.exploit-db.com/shellcodes/48703)
+
 ## Background
 Most of the writeups I found on egghunters walked through the access(2) implementation documented in skape's paper.  For my particular problem, the access(2) implementations were too large for the space I could occupy.  The implementation of sigaction(2) takes up 32 bytes.  
 
